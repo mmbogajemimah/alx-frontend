@@ -322,7 +322,7 @@ a:active {
 }
 
 .header {
-    pad: var(--header-padding);
+    padding: var(--header-padding);
 }
 
 .header-logo {
