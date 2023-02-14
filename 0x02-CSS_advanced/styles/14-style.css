@@ -46,6 +46,7 @@
  * Smooth scroll behavior for browsers
  * Correct font-size for all browsers
  */
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
