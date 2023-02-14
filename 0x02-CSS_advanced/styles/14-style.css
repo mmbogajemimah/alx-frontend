@@ -1,0 +1,167 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 15-20. Targeting the root element and defines the following custom properties
+ * 22-23. create 2 custom font-family properties font-family-base and font-family-title with the same list of fonts
+ * 25-29. Targeting the root selector with the custom font size
+ * 31-32. Variables for the font-weight 
+ * 34-38. Defining line heights 
+ * 40-41. Defining the margins
+ */
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    --font-family-base: "Open Sans" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+/**
+ * Smooth scroll behavior for browsers
+ * Correct font-size for all browsers
+ */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Set body's color to the text color variable
+ * Set body's font family to font-family-base variable
+ * Set body's font size to font-size-medium variable
+ * Set body's font weight to font-weight-regular variable
+ * Set body's line height to line-height-base variable
+ */
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the text decoration on active links.
+ */
+
+a:link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/**
+ * Change the font style on visited links.
+ */
+
+a:visited{
+    font-style: italic;
+}
+
+/**
+ * Change the text decoration on underlined links.
+ */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * Change the background color on active links.
+ */
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+
+/* Classes
+   ========================================================================== */
+
+/**
+ * 1. Change the display of the class to none
+ */
+
+.visually-hidden {
+    display: none;
+}
+
+/**
+ * 1. Change the color of the text to the class to color-primary
+ */
+
+.card-category {
+    color: var(--color-primary);
+}
+
+/**
+ * 1. Change the text-align property of the class to center using the --section header align variable
+ */
+
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+/**
+ * 1. Change the font family, font-size, font-weight, margin and color of the class
+ */
+
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/**
+ * 1. Change the color, font family, text transform and font weight of the class
+ */
+
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
