@@ -247,7 +247,8 @@ a:active {
     color: var(--nav-item-link-hover);
 }
 
-.row {
+.row::after {
+    content: "";
     display: table;
     clear: both;
 }
