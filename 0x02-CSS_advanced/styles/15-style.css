@@ -46,7 +46,7 @@
  * Adding a universal box-sizing 
  */
 
-* {
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
