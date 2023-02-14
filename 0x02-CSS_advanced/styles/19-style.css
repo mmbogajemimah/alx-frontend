@@ -255,7 +255,7 @@ a:active {
 ul .row {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    list-style-type: none;
 }
 
 .col-1-3 {
@@ -276,7 +276,7 @@ ul .row {
     color: var(--text-color);
 }
 
-ul .footer{
+.footer ul{
     text-align: right;
 }
 
