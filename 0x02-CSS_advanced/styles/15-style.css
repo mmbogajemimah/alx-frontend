@@ -46,7 +46,7 @@
  * Adding a universal box-sizing 
  */
 
-*{
+* {
     box-sizing: border-box;
 }
 
