@@ -218,11 +218,6 @@ a:active {
     margin-right: auto;
 }
 
-.footer {
-    padding: var(--footer-padding);
-}
-
-
 .navbar-menu {
     float: right;
 }
@@ -268,6 +263,10 @@ ul.row {
     width: 50%;
     float: left;
     padding: 0.5rem;
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
 
 .footer-copyright {
