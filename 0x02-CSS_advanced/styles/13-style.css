@@ -50,10 +50,6 @@ a {
     text-decoration: none;
 }
 
-a[href] {
-    font-style: italic;
-}
-
 a[href]:visited {
     font-style: italic;
 }
