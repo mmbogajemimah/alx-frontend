@@ -224,7 +224,7 @@ a:active {
     color: var(--color-primary);
 }
 
-.card-work .card-image {
+.card-work .card-outer {
     position: relative;
     overflow: hidden;
 }
